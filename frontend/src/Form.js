@@ -175,14 +175,14 @@ function Form() {
       };
 
       Dataarray.age = Number(data.Age);
-      Dataarray.education = educationMap[data.education_level[0]];
-      Dataarray.sex = genderMap[data.sex_at_birth[0]];
-      Dataarray.is_smoking = smokingMap[data.smoking_status[0]];
+      Dataarray.education = educationMap[data.education_level];
+      Dataarray.sex = genderMap[data.sex_at_birth];
+      Dataarray.is_smoking = smokingMap[data.smoking_status];
       Dataarray.cigsPerDay = Number(data.cigarettes_per_day);
-      Dataarray.BPMeds = BPMap[data.bp_meds[0]];
-      Dataarray.prevalentStroke = Strokemap[data.stroke_history[0]];
-      Dataarray.prevalentHyp = Hypertensionmap[data.hypertension_history[0]];
-      Dataarray.diabetes = Diabetesmap[data.diabetes_history[0]];
+      Dataarray.BPMeds = BPMap[data.bp_meds];
+      Dataarray.prevalentStroke = Strokemap[data.stroke_history];
+      Dataarray.prevalentHyp = Hypertensionmap[data.hypertension_history];
+      Dataarray.diabetes = Diabetesmap[data.diabetes_history];
       Dataarray.totChol = Number(data.cholesterol_level);
       Dataarray.sysBP = Number(data.systolic_bp);
       Dataarray.diaBP = Number(data.diastolic_bp);
