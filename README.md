@@ -1,3 +1,17 @@
 # DTE-Hackathon-2024
 
-Our project provides people who suspect they have Congestive Heart Failure (CHF) an accurate assessment of the probalilty they have the illness. The metrics are collected through a questionaire and the patients risk level is determined through an AI trained on a model of various CHF risk indicators. The results are returned to the user via an easy to read PyChart. Then we provide the user with the next steps to improve their condition. Our project will help people who suspect they have CHF to figure out wetether they should persue the issue further by getting offically examined or change their habits to migiate the risk of contracting the disease.
+# Project Overview
+
+Our project offers individuals who suspect they may have Congestive Heart Failure (CHF) a reliable assessment of their likelihood of having the condition. 
+
+## Key Features
+
+- **Accurate Risk Assessment**: Users complete a questionnaire, and their risk level is evaluated using an AI model trained on various CHF risk indicators.
+  
+- **User-Friendly Results**: Results are presented through an easy-to-read PyChart, allowing users to quickly understand their risk level.
+  
+- **Guidance for Next Steps**: We provide recommendations on how users can improve their condition based on their assessment results.
+
+## Purpose
+
+This project aims to assist individuals who suspect they may have CHF in determining whether they should seek further evaluation or make lifestyle changes to mitigate their risk of developing the disease.
