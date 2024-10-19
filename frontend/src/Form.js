@@ -13,6 +13,17 @@ const surveyJson = {
     name: "LastName",
     title: "Enter your last name:",
     type: "text"
+  }, {
+    "type": "checkbox",
+    "name": "education level",
+    "title": "What is your highest education level?",
+    "choices": [ "None of the below", "High school or GED", "Bachelors degree", "Graduate degree" ],
+    "isRequired": true,
+    "colCount": 1,
+    "showNoneItem": false,
+    "showOtherItem": false,
+    "showSelectAllItem": false,
+    "separateSpecialChoices": true
   }]
 };
 
