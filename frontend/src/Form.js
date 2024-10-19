@@ -12,7 +12,7 @@ const surveyJson = {
     type: "text",
     "isRequired": true
   }, {
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "education_level",
     "title": "What is your highest education level?",
     "choices": [ "None of the below", "High school or GED", "Bachelors degree", "Graduate degree" ],
@@ -23,7 +23,7 @@ const surveyJson = {
     "showSelectAllItem": false,
     "separateSpecialChoices": true
   },{
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "sex_at_birth",
     "title": "What is your sex at birth?",
     "choices": [ "Male", "Female" ],
@@ -34,7 +34,7 @@ const surveyJson = {
     "showSelectAllItem": false,
     "separateSpecialChoices": true
   }, {
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "smoking_status",
     "title": "Do you currently smoke cigarettes?",
     "choices": [ "Yes", "No" ],
@@ -50,7 +50,7 @@ const surveyJson = {
     type: "text",
   }, 
   {
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "bp_meds",
     "title": "Are you currently taking medication for blood pressure?",
     "choices": [ "Yes", "No" ],
@@ -61,7 +61,7 @@ const surveyJson = {
     "showSelectAllItem": false,
     "separateSpecialChoices": true
   },{
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "stroke_history",
     "title": "Have you ever had a stroke?",
     "choices": [ "Yes", "No" ],
@@ -72,7 +72,7 @@ const surveyJson = {
     "showSelectAllItem": false,
     "separateSpecialChoices": true
   }, {
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "hypertension_history",
     "title": "Have you ever been diagnosed with high blood pressure (hypertension)?",
     "choices": [ "Yes", "No" ],
@@ -83,7 +83,7 @@ const surveyJson = {
     "showSelectAllItem": false,
     "separateSpecialChoices": true
   }, {
-    "type": "checkbox",
+    "type": "radiogroup",
     "name": "diabetes_history",
     "title": "Have you ever been diagnosed with diabetes?",
     "choices": [ "Yes", "No" ],
