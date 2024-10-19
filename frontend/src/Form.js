@@ -129,6 +129,7 @@ const surveyJson = {
 };
 
 function Form() {
+    const navigate = useNavigate();
   const survey = new Model(surveyJson);
   const alertResults = useCallback((sender) => {
     const data = sender.data;
@@ -189,6 +190,8 @@ function Form() {
       Dataarray.heartRate = Number(data.resting_heart_rate);
       Dataarray.glucose = Number(data.blood_glucose_level);
 
+
+      
       fetch('http://localhost:5000/predict', {
         method: 'POST',
         headers: {
@@ -199,10 +202,8 @@ function Form() {
 
       .then(response => response.json())
       .then(result => {
-        
-
-
       alert(`Prediction: ${result.prediction}, Confidence: ${result.confidence}`);
+      navigate("/results");     
     })
 
     .catch(error => {
@@ -214,6 +215,7 @@ function Form() {
   }, []);
 
   survey.onComplete.add(alertResults);
+
 
   return <Survey model={survey} />;
 }
