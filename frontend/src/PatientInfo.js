@@ -1,10 +1,10 @@
 import React from 'react';
-function PatientInfo(){
+import './PatientInfo.css';
+const PatientInfo = () => {
     return (
         <div className="PatientInfo">
-            <header className="PatientInfo-header">
             <h1> What is Congestive Heart Failure?</h1>
-            <body>
+            <div>
                 <p> Congestive Heart Failure (CHF) is a major 
                     health condition when the human heart fails to
                     pump sufficient amounts of blood throughout the 
@@ -23,8 +23,7 @@ function PatientInfo(){
                     This app aims to address patient access to treatments, diagnose the 
                     conditions for users, and provide support to users to lower CHF rates. 
                 </p>
-            </body>
-            </header>
+            </div>
         </div>
     );
 }
