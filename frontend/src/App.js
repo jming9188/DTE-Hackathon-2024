@@ -2,6 +2,7 @@ import React from 'react';
 import PatientInfo from './PatientInfo'
 import './App.css';
 import Form from './Form';
+import ApexChart from './Piechart';
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,7 @@ function App() {
       </header>
       <PatientInfo />
       <Form/>
+      <ApexChart/>
     </div>
   );
 }
