@@ -3,16 +3,21 @@ import PatientInfo from './PatientInfo'
 import './App.css';
 import Form from './Form';
 import ApexChart from './Piechart';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Results from './Results';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+      <div className="App">
+       
         <h1>Welcome to our App!</h1>
-      </header>
-      <PatientInfo />
-      <Form/>
-      <ApexChart/>
-    </div>
+       
+        <PatientInfo />
+        <Form/>
+    
+      </div>
+     
   );
 }
 
