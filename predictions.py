@@ -6,9 +6,7 @@ import joblib
 model = 'retrained_CHF_model.pkl'
 clf = joblib.load(model)
 app = Flask(__name__)
-
-# Configure CORS to allow requests from your frontend
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/predict', methods=['OPTIONS', 'POST'])
 def predict():
@@ -48,4 +46,4 @@ def predict():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
