@@ -23,6 +23,17 @@ const PatientInfo = () => {
                     This app aims to address patient access to treatments, diagnose the 
                     conditions for users, and provide support to users to lower CHF rates. 
                 </p>
+                <div className="video-container">
+                    <iframe
+                        width="80%"
+                        height="600"
+                        src="https://www.youtube.com/embed/GnpLm9fzYxU?cc_load_policy=1"
+                        title="What is Congestive Heart Failure?"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
             </div>
         </div>
     );
