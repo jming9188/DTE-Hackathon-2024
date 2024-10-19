@@ -188,7 +188,28 @@ function Form() {
       Dataarray.heartRate = Number(data.resting_heart_rate);
       Dataarray.glucose = Number(data.blood_glucose_level);
 
-      alert(JSON.stringify(Dataarray));
+      fetch('http://localhost:5000/predict', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Dataarray),
+        })
+
+      .then(response => response.json())
+      .then(result => {
+        
+
+
+      alert(`Prediction: ${result.prediction}, Confidence: ${result.confidence}`);
+    })
+
+    .catch(error => {
+      console.error('Error:', error);
+      alert(error);
+      alert('Error in the form submitted');
+    });
+
   }, []);
 
   survey.onComplete.add(alertResults);

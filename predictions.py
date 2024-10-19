@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import joblib
 
@@ -6,6 +7,7 @@ import joblib
 model = 'retrained_CHF_model.pkl'
 clf = joblib.load(model)
 app = Flask(__name__)
+CORS(app)
 
 
 
@@ -23,7 +25,7 @@ def predict():
         education = data['education']
         sex = data['sex']
         is_smoking = data['is_smoking']
-        cigsPerDay = data['cigsPerDay']
+        cigsPerDay = data.get('cigsPerDay', 0)  
         BPMeds = data['BPMeds']
         prevalentStroke = data['prevalentStroke']
         prevalentHyp = data['prevalentHyp']
@@ -44,8 +46,8 @@ def predict():
         prediction_proba = clf.predict_proba(new_data)
 
         return jsonify({
-            'prediction': int(prediction[0]),  # 0 or 1 for CHF prediction
-            'confidence': float(prediction_proba[0][prediction[0]])  # Confidence score
+            'prediction': int(prediction[0]),  
+            'confidence': float(prediction_proba[0][prediction[0]]) 
         })
 
     except Exception as e:
