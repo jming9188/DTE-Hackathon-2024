@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import React, { useEffect } from 'react';
-import './heart.css'
 const Heart = () => {
   useEffect(() => {
     // Scene
@@ -31,7 +30,7 @@ const Heart = () => {
     shape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
     shape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
     shape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
-    const geometry = new THREE.ShapeGeometry(shape);
+    const geometry = new THREE.ExtrudeGeometry(shape);
     const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
     const heartMesh = new THREE.Mesh(geometry, material);
     scene.add(heartMesh);
