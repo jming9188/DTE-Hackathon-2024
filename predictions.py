@@ -3,7 +3,7 @@ from flask_cors import CORS
 import numpy as np
 import joblib
 
-model = 'retrained_CHF_model.pkl'
+model = 'best_model.pkl'
 clf = joblib.load(model)
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
