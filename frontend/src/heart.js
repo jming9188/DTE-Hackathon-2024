@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import React, { useEffect } from 'react';
-
+import './heart.css'
 const Heart = () => {
   useEffect(() => {
     // Scene
@@ -17,9 +17,9 @@ const Heart = () => {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-    camera.position.z = 5;
+    camera.position.z = 35;
     scene.add(camera);
-    
+
     //Utilized code from https://threejs.org/docs/#api/en/geometries/ShapeGeometry 
     // Create Heart Shape
     const x = 0, y = 0;
