@@ -9,15 +9,10 @@ import Results from './Results';
 import Start from './Start';
 import { useRef } from 'react';
 
-import Heart from './heart';
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <h1>Welcome to our App!</h1>
-        <Heart />
-        <PatientInfo />
-        <Form/>
         <Routes>
           <Route index element={<Start />} />
           <Route path="/results" element={<Results />} />
