@@ -132,7 +132,7 @@ const surveyJson = {
 function Form() {
     const navigate = useNavigate();
   const survey = new Model(surveyJson);
-  survey.applyTheme({     "themeName": "contrast",
+  survey.applyTheme({    "themeName": "contrast",
     "colorPalette": "dark",
     "isPanelless": false,
     "backgroundImage": "",
@@ -215,7 +215,7 @@ function Form() {
         "--sjs-article-font-default-lineHeight": "28px",
         "--sjs-article-font-default-paragraphIndent": "0px",
         "--sjs-article-font-default-textCase": "none",
-        "--sjs-general-backcolor-dim": "#DDDDDD",
+        "--sjs-general-backcolor-dim": "#f5f1fb",
         "--sjs-primary-backcolor": "#000000",
         "--sjs-primary-backcolor-dark": "rgba(83, 83, 83, 1)",
         "--sjs-primary-backcolor-light": "rgba(255, 255, 255, 1)",
