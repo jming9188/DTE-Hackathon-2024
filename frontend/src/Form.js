@@ -202,8 +202,8 @@ function Form() {
 
       .then(response => response.json())
       .then(result => {
-      alert(`Prediction: ${result.prediction}, Confidence: ${result.confidence}`);
-      navigate("/results");     
+     
+      navigate("/results", { state: { prediction: result.prediction, confidence: result.confidence } });     
     })
 
     .catch(error => {
