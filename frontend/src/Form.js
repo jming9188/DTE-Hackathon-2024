@@ -5,7 +5,7 @@ import { Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 import { useNavigate } from 'react-router-dom';
 import { ContrastLight } from "survey-core/themes"
-
+import './App.css'
 const surveyJson = {
   elements: [{
     name: "Age",
@@ -311,7 +311,10 @@ function Form() {
   survey.onComplete.add(alertResults);
 
 
-  return <Survey model={survey} />;
+  return (
+  <div className='survey'><Survey model={survey} />;
+  </div>
+  )
 }
 
 export default Form;
