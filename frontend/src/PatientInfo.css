@@ -1,6 +1,6 @@
 .PatientInfo {
     text-align: center;
-    background-color: #53D8EA;
+    background-color: rgba(221, 221, 221, 1);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
