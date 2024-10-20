@@ -1,6 +1,7 @@
 .NextSteps {
     text-align: center;
     background-color: white;
+    border:#61dafb;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
