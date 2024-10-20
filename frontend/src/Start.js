@@ -8,8 +8,10 @@ function Start() {
   return (
       <div>
         <Heart/>
+        <div className='formbox'>
         <PatientInfo />
         <Form/>
+        </div>
       
         </div>
   );
