@@ -1,18 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ReactApexChart from 'react-apexcharts';
+import './piechart.css';
 
 class ApexChart extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      series: [44, 55, 41, 17, 15],
+      series: [
+        this.props.value1,
+        this.props.value2
+      ],
       options: {
         chart: {
           type: 'donut',
         },
-        labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+        labels: ['Chance you have of CHF within 10 years', 'Chance you do not have of CHF within 10 years'],
         responsive: [
           {
             breakpoint: 480,
@@ -30,24 +33,34 @@ class ApexChart extends React.Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    if (
+      prevProps.value1 !== this.props.value1 ||
+      prevProps.value2 !== this.props.value2 
+    ) {
+      this.setState({
+        series: [
+          this.props.value1,
+          this.props.value2,
+        ],
+      });
+    }
+  }
+
   render() {
     return (
-      <div>
-        <div id="chart">
+      <div className="chart-container">
+        
           <ReactApexChart
             options={this.state.options}
             series={this.state.series}
             type="donut"
             height={350}
           />
-        </div>
+       
       </div>
     );
   }
 }
 
 export default ApexChart;
-
-
-const domContainer = document.querySelector('#app');
-
