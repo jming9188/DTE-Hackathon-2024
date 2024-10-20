@@ -7,7 +7,6 @@ import Heart from './heart';
 function Start() {
   return (
       <div>
-        <h1>Welcome to our App!</h1>
         <Heart/>
         <PatientInfo />
         <Form/>
