@@ -9,8 +9,8 @@ function Results() {
 
   return (
     <div className='result'>
-      <h1>{confidence*100}% chance you will have CHF withn 10 years </h1>
-      <ApexChart value1={confidence*100} value2={100 - confidence*100}/>
+      <h1>{100-confidence*100}% chance you will have CHF withn 10 years </h1>
+      <ApexChart value1={100-confidence*100} value2={confidence*100}/>
       <NextSteps/>
     </div>
   );
