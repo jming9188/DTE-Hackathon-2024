@@ -16,7 +16,7 @@ const PatientInfo = () => {
                     While treatments for CHF such as heart transplants are helpful, the most important preventative treatments include healthy diets and getting regular exercise.
                 </li>
                 <li>
-                    This app aims to address patient access to treatments, diagnose the conditions for users, and provide support to users to lower CHF rates.
+                    HeartWise aims to address patient access to treatments, diagnose the conditions for users, and provide support to users to lower CHF rates.
                 </li>
             </ul>
             <div className="video-container">
