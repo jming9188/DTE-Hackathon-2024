@@ -8,7 +8,7 @@ function Results() {
   const { prediction, confidence } = location.state || {};
 
   return (
-    <div>
+    <div className='result'>
       <NextSteps/>
       <h1>{confidence*100}% chance you will have CHF withn 10 years </h1>
       <ApexChart value1={confidence*100} value2={100 - confidence*100}/>
