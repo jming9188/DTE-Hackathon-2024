@@ -17,6 +17,7 @@ const Heart = () => {
     // Camera
     const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
     camera.position.z = 35;
+    camera.position.y = -5;
     scene.add(camera);
 
     //Utilized code from https://threejs.org/docs/#api/en/geometries/ShapeGeometry 
@@ -33,6 +34,7 @@ const Heart = () => {
     const geometry = new THREE.ExtrudeGeometry(shape);
     const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
     const heartMesh = new THREE.Mesh(geometry, material);
+    heartMesh.scale.y = -1;
     scene.add(heartMesh);
 
     // Renderer
@@ -44,7 +46,6 @@ const Heart = () => {
     // Animate the heart
     const animate = () => {
       requestAnimationFrame(animate);
-      heartMesh.rotation.x += 0.01;
       heartMesh.rotation.y += 0.01;
       renderer.render(scene, camera);
     };
