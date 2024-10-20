@@ -1,8 +1,8 @@
 # DTE-Hackathon-2024
 
-# Project Overview
+# HeartWise Project Overview
 
-Our project offers individuals who suspect they may have Congestive Heart Failure (CHF) a reliable assessment of their likelihood of having the condition. 
+HeartWise offers individuals who suspect they may have Congestive Heart Failure (CHF) a reliable assessment of their likelihood of having the condition. 
 
 ## Key Features
 
@@ -14,4 +14,4 @@ Our project offers individuals who suspect they may have Congestive Heart Failur
 
 ## Purpose
 
-This project aims to assist individuals who suspect they may have CHF in determining whether they should seek further evaluation or make lifestyle changes to mitigate their risk of developing the disease.
+HeartWise aims to assist individuals who suspect they may have CHF in determining whether they should seek further evaluation or make lifestyle changes to mitigate their risk of developing the disease.
