@@ -13,11 +13,11 @@ function Results() {
 
   let message = '';
 
-  if (confidencePercentage > 75) {
+  if (confidencePercentage < 25) {
     message = 'High risk: It is important to take immediate action. Please consult with a physician about immediate lifestyle changes.';
-  } else if (confidencePercentage > 50) {
+  } else if (confidencePercentage < 50) {
     message = 'Moderate risk: Consider making some changes to your health where you can, you are on track for Congestive Heart Failure';
-  } else if (confidencePercentage > 25) {
+  } else if (confidencePercentage < 75) {
     message = 'Low risk: While the risk is relatively low, failure to maintain healthy lifestyle could very well mean you end up with CHF';
   } else {
     message = 'Very low risk: Continue to live how you are, though stay mindful about your health.';
